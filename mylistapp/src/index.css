@@ -1,68 +1,141 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+body{
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+background-color:rgb(65, 62, 78);
+
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+
+.todo-list{
+
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+margin: 75px;
+
+
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+h1{
+
+  font-size: 4rem;
+  color:rgb(245, 230, 208);
+
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+
+button{
+
+
+  color:rgb(245, 230, 208);
+  font-size: 1.5rem;
+  margin-left: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border:none;
+  cursor:pointer;
+  transition: background-color 0.5s ease;
+
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+
+
+.addbutton{
+
+
+  background-color: hsl(120, 30%, 48%);
+  
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.addbutton:hover{
+
+  background-color: hsl(120, 23%, 36%);
+
+
+}
+
+
+.delbutton{
+
+  background-color: hsl(0, 43%, 48%);
+
+
+}
+
+.delbutton:hover{
+
+  background-color: hsl(0, 43%, 34%);
+
+
+}
+
+.moveupbutton{
+
+  background-color: hsl(240, 45%, 59%);
+
+}
+
+
+.movedownbutton{
+
+  background-color: hsl(240, 45%, 59%);
+
+}
+
+
+.moveupbutton:hover{
+
+  background-color: hsl(240, 45%, 43%);
+}
+
+
+.movedownbutton:hover{
+
+  background-color: hsl(240, 45%, 43%);
+}
+
+
+
+
+input[type = "text"]{
+
+color:hsla(60, 1%, 14%, 0.616);
+font-size: 1.6rem;
+
+padding:10px;
+
+border: 2px solid rgb(70, 64, 64);
+
+
+}
+
+ol{
+
+padding: 0;
+
+}
+
+
+li{
+
+
+font-size: 2rem;
+font-weight: bold;
+padding: 15px;
+background-color:bisque;
+margin-bottom: 10px;
+border: 3px solid hwb(0 11% 89% / 0.651);
+border-radius: 5px;
+display: flex;
+align-items: center;
+
+
+}
+
+
+.text{
+    /* the text within the list element will grow and shrink with web browser size  */
+  flex: 1;
 }
